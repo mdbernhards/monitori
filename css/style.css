@@ -29,3 +29,23 @@
 .footer{
     background-color: fuchsia;
 }
+
+.menu{
+    height: 35px;
+    text-align: center;
+}
+
+.menu>ul>li{
+    display:inline;
+    padding:10px 10px 10px 10px;
+    background-color: mediumpurple;
+    position: relative;
+    top:8px;
+    font-family: Algerian, serif;
+    font-size: 15px;
+}
+
+.menu>li>a{
+    text-decoration: none;
+    color:#fff;
+}
