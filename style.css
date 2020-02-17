@@ -1,0 +1,31 @@
+.mainbox{
+    background-color: chartreuse;
+    width: 800px;
+    margin: 0px auto;
+}
+
+.menu{
+    background-color: darkgrey;
+}
+
+.leftside{
+    background-color: rebeccapurple;
+    width: 100px;
+    float:left;
+}
+
+.main{
+    background-color: darkkhaki;
+    width: 600px;
+    float:left;
+}
+
+.rightside{
+    background-color: aqua;
+    width: 100px;
+    float:left;
+}
+
+.footer{
+    background-color: fuchsia;
+}
