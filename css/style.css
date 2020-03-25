@@ -5,47 +5,49 @@
 }
 
 .menu{
-    background-color: black;
+    background-color: #303030;
+    background-image: url('../bildes/texture.png');
+    background-repeat:repeat;
     width: 100%;
 }
 
 .leftside{
-    background-color: rebeccapurple;
+    background-color: dodgerblue;
     width: 13%;
     height: 900px;
     float:left;
 }
 
 .main {
-    background-color: darkkhaki;
+    background-color: white;
     width: 75%;
     height: 900px;
     float: left;
 }
 
 .rightside{
-    background-color: aqua;
+    background-color: dodgerblue;
     width: 12%;
     height: 900px;
     float:left;
 }
 
 .footer{
-    background-color: fuchsia;
+    background-color: black;
     width: 100%;
     height: 1200px;
 }
 
 .menu{
-    height: 35px;
+    height: 100px;
     text-align: center;
 }
 
 .menu>ul>li{
     display:inline;
-    padding:10px 10px 10px 10px;
+    padding:10px 10px 10px 20px;
     position: relative;
-    top:8px;
+    top:65px;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
     font-size: 17px;
@@ -78,6 +80,10 @@ a {
 
 .mgallery{
     text-align: left;
-    background-color: #ffff99;
+}
 
+.logo{
+    position: absolute;
+    right: 0;
+    max-height: 100px;
 }
