@@ -4,43 +4,66 @@
     margin: 0px auto;
 }
 
-.menu{
-    background-color: #303030;
-    background-image: url('../bildes/texture.png');
-    background-repeat:repeat;
-    width: 100%;
-}
 
 .leftside{
     background-color: dodgerblue;
-    width: 13%;
+    width: 8%;
     height: 900px;
     float:left;
 }
 
 .main {
     background-color: white;
-    width: 75%;
+    width: 84%;
     height: 900px;
     float: left;
 }
 
 .rightside{
     background-color: dodgerblue;
-    width: 12%;
+    width: 8%;
+    top: 100px;
     height: 900px;
     float:left;
 }
 
 .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #303030;
+    background-image: url('../bildes/texture.png');
+    background-repeat:repeat;
+
+
+}
+
+.footer>li{
+    position:relative;
+    padding:8px 8px 8px 8px;
+    top: 20px;
+    left: 7%;
+    font-size: 20px;
+}
+
+.footerText{
+    color: gray;
+    position: relative;
+    top: 35px;
+    left: 39%;
+    font-size: 12px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+
+
+.menu{
     background-color: #303030;
     background-image: url('../bildes/texture.png');
     background-repeat:repeat;
     width: 100%;
-    height: 1200px;
-}
-
-.menu{
     height: 100px;
     text-align: center;
 }
@@ -50,6 +73,7 @@
     padding:10px 10px 10px 20px;
     position: relative;
     top:65px;
+    left:-300px;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
     font-size: 17px;
@@ -69,11 +93,13 @@ a {
 }
 
 .virsraksts{
-    position: relative;
+    position: absolute;
     font-family: "Segoe UI", Candara;
     color: white;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 34px;
+    left: 169px;
+    top: 50px;
 }
 
 .gallery{
@@ -93,6 +119,23 @@ a {
 
 .logo{
     position: absolute;
-    right: 0;
+    left: 31px;
+    top: 0;
     max-height: 100px;
+}
+
+.map{
+    top: 30px;
+    left: 30px;
+    border-color: black;
+    border-style: wave;
+}
+
+.toptext{
+    position: relative;
+    top: 1%;
+    left: 35%;
+    font-family: "Segoe UI", Candara;
+    font-weight: bold;
+    font-size: 17px;
 }
