@@ -5,6 +5,16 @@
     <title>PC monitori</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #map{
+            height: 500px;
+            width: 750px;
+        }
+    </style>
 </head>
 <body>
 <div class="mainbox">
@@ -19,7 +29,19 @@
         <div class="virsraksts">monitori LV</div>
     </div>
     <div class="leftside">left</div>
-    <div class="main">main</div>
+    <div class="main">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var location =  {lat: -25.363, lng: 131.044};
+                var map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: location});
+            }
+
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32HyHIY_vtYEx9suAt0FpHvbgMdiaAMk&callback=initMap">
+
+        </script>
+    </div>
     <div class="rightside">right</div>
     <div class="footer">
         <li><a href="index.html">Jaunumi</a></li>
