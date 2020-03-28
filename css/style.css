@@ -1,21 +1,31 @@
+body{
+    height: 100%;
+    min-height: 100%;
+
+
+
+}
 .mainbox{
-    background-color: chartreuse;
+    background-color: #ffff99;
     width: 100%;
     margin: 0px auto;
+    height:1500px;
+    position: relative;
 }
 
 
 .leftside{
     background-color: dodgerblue;
     width: 8%;
-    height: 1600px;
+    min-height: 1500px;
     float:left;
+
 }
 
 .main {
     background-color: white;
     width: 84%;
-    height: 900px;
+    height:100%;
     float: left;
 }
 
@@ -23,19 +33,20 @@
     background-color: dodgerblue;
     width: 8%;
     top: 100px;
-    height: 1600px;
+    min-height: 1500px;
     float:left;
 }
 
 .footer{
-    position: fixed;
-    left: 0;
+    clear: both;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 150px;
     background-color: #303030;
     background-image: url('../bildes/texture.png');
     background-repeat:repeat;
+    overflow: hidden;
 
 
 }
@@ -43,15 +54,15 @@
 .footer>li{
     position:relative;
     padding:5px 5px 5px 5px;
-    top: 14px;
+    top: 8px;
     left: 7%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .footerText{
     color: gray;
     position: relative;
-    top: 15px;
+    top: 19px;
     left: 43%;
     font-size: 12px;
     font-family: Arial,Helvetica,sans-serif;
@@ -63,6 +74,8 @@
     background-color: #303030;
     background-image: url('../bildes/texture.png');
     background-repeat:repeat;
+
+    position: relative;
     width: 100%;
     height: 100px;
     text-align: center;
@@ -70,13 +83,14 @@
 
 .menu>ul>li{
     display:inline;
-    padding:10px 10px 10px 20px;
     position: relative;
-    top:65px;
-    left:-300px;
+    padding:10px 10px 10px 20px;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
     font-size: 17px;
+    top: 65px;
+    right: 300px;
+
 }
 
 .active{
@@ -103,8 +117,9 @@ a {
 }
 
 .gallery{
-    max-width: 200px;
-    margin: 5px;
+    max-width: 270px;
+    max-height: 270px;
+    margin: 7px;
     border: 1px solid #ccc;
     background-color: white;
 }
@@ -119,11 +134,11 @@ a {
 
 .gallerybox{
     position: relative;
-    top: 5%;
-    left: 6%;
-    width: 85%;
+    top: 2.6%;
+    left: 4.8%;
+    width: 87%;
     border: 5px solid gray;
-    margin: 15px;
+    margin: 20px;
 }
 
 .logo{
@@ -142,7 +157,7 @@ a {
 
 .toptext{
     position: relative;
-    top: 2.5%;
+    top: 1.8%;
     left: 6%;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
@@ -151,10 +166,10 @@ a {
 
 .raksts{
     position: relative;
-    width: 85%;
+    width: 87%;
     height: 200px;
     padding: 10px;
-    top: 4.5%;
+    top: 3%;
     left: 5%;
     border: 5px solid gray;
     margin: 15px;
@@ -169,34 +184,79 @@ a {
 
 }
 
+.videogallery{
+    position: relative;
+    width: 87%;
+    top: 3%;
+    left: 9%;
+}
+
+.video{
+    margin: 40px;
+    font-family: "Segoe UI", Candara;
+    font-size: 16px;
+    width: 560px;
+    float: left;
+}
+
+.videotext{
+    position: relative;
+    top: 1.8%;
+    left: 11.5%;
+    font-family: "Segoe UI", Candara;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.youtubevid{
+    width: 560px;
+    height: 315px;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+
+    .leftside{
+        min-height: 100px;
+        width:100%;
+    }
     .main {width: 100%}
+}
+
+@media only screen and (max-width: 1000px) {
+    .main {width: 92%}
     .rightside{
         display: none;
     }
-    .leftside{
-        display: none;
+
+    .youtubevid{
+        max-width: 280px;
+        max-height: 167px;
     }
 
-
-
 }
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1700px) {
+    .menu>ul>li{
+        right: 200px;
+    }
 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1200px) {
-    .menu{
-        height: 200px;
+    .footerText{
+        left: 60px;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1500px) {
+    .menu{
+        height: 160px;
 
+    }
+    .menu>ul>li{
+        right: 0px;
+        top: 115px;
+    }
 }
