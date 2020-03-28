@@ -8,7 +8,7 @@
 .leftside{
     background-color: dodgerblue;
     width: 8%;
-    height: 900px;
+    height: 1600px;
     float:left;
 }
 
@@ -23,7 +23,7 @@
     background-color: dodgerblue;
     width: 8%;
     top: 100px;
-    height: 900px;
+    height: 1600px;
     float:left;
 }
 
@@ -32,7 +32,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-color: #303030;
     background-image: url('../bildes/texture.png');
     background-repeat:repeat;
@@ -42,17 +42,17 @@
 
 .footer>li{
     position:relative;
-    padding:8px 8px 8px 8px;
-    top: 20px;
+    padding:5px 5px 5px 5px;
+    top: 14px;
     left: 7%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footerText{
     color: gray;
     position: relative;
-    top: 35px;
-    left: 39%;
+    top: 15px;
+    left: 43%;
     font-size: 12px;
     font-family: Arial,Helvetica,sans-serif;
 }
@@ -110,11 +110,20 @@ a {
 }
 
 .gallery:hover {
-    border: 1px solid #777;
+    border: 2px solid #777;
 }
 
 .mgallery{
     text-align: left;
+}
+
+.gallerybox{
+    position: relative;
+    top: 5%;
+    left: 6%;
+    width: 85%;
+    border: 5px solid gray;
+    margin: 15px;
 }
 
 .logo{
@@ -133,9 +142,61 @@ a {
 
 .toptext{
     position: relative;
-    top: 1%;
-    left: 35%;
+    top: 2.5%;
+    left: 6%;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 23px;
+}
+
+.raksts{
+    position: relative;
+    width: 85%;
+    height: 200px;
+    padding: 10px;
+    top: 4.5%;
+    left: 5%;
+    border: 5px solid gray;
+    margin: 15px;
+}
+
+.gallerytext{
+    position: relative;
+    padding:10px 10px 10px 20px;
+    font-family: "Segoe UI", Candara;
+    font-weight: bold;
+    font-size: 23px;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main {width: 100%}
+    .rightside{
+        display: none;
+    }
+    .leftside{
+        display: none;
+    }
+
+
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {
+    .menu{
+        height: 200px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
