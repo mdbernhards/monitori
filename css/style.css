@@ -7,34 +7,16 @@ body{
     background-color: white;
     width: 100%;
     margin: 0px auto;
-    height: 1700px;
+    height: auto;
     position: relative;
 }
 
 .leftside{
     background-color: #e7ebe6;
     width: 10%;
-    height: 1700px;
+    height: auto;
+    min-height: 1700px;
     float:left;
-}
-
-.leftside>p{
-    margin: 5px;
-    position: relative;
-    font-size: 17px;
-    font-family: Arial,Helvetica,sans-serif;
-    padding: 14px 25px;
-    display: inline-block;
-    width: 70%;
-    text-align: center;
-
-}
-
-.leftside>p:hover{
-    transition: 0.4s;
-    background-color: lightblue;
-    padding: 14px 25px;
-    display: inline-block;
 }
 
 .main {
@@ -80,7 +62,6 @@ body{
     background-color: #303030;
     background-image: url('../bildes/texture.png');
     background-repeat:repeat;
-
     position: relative;
     width: 100%;
     height: 100px;
@@ -98,26 +79,34 @@ body{
     right: 300px;
 }
 
-
-
-a:hover {
-    transition: 0.4s;
-    color: lightblue;
-}
-
 a {
     text-decoration: none;
     color: white;
 }
 
+a:hover, a.active {
+    transition: 0.4s;
+    color: lightblue;
+}
+
 a.sidemenu{
+    margin: 4px;
+    position: relative;
+    font-size: 17px;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 14px 0px;
+    display: inline-block;
+    width: 95%;
+    text-align: center;
     text-decoration: none;
     color: black;
 }
 
-a.sidemenu:hover{
+a.sidemenu:hover, a.sidemenu.active{
     transition: 0.4s;
+    background-color: lightblue;
     color: blue;
+    display: inline-block;
 }
 
 a.linksteksta{
@@ -182,11 +171,11 @@ a.linksteksta:hover{
 
 .toptext{
     position: relative;
-    top: 1.8%;
-    left: 6%;
+    left: 5%;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
     font-size: 30px;
+    margin: 10px;
 }
 
 .raksts{
@@ -213,9 +202,14 @@ a.linksteksta:hover{
 }
 
 .monitorutops{
+    position: relative;
+    left: 1%;
+    margin: 15px;
+    padding-left: 35px;
+    padding-bottom: 15px;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 50px;
 }
 
 .gallerytext{
@@ -256,16 +250,6 @@ a.linksteksta:hover{
     height: 315px;
 }
 
-.monitorutops{
-    position: relative;
-    left: 1%;
-    margin: 15px;
-    padding:15px 15px 15px 40px;
-    font-family: "Segoe UI", Candara;
-    font-weight: bold;
-    font-size: 50px;
-}
-
 .monitors{
     padding:15px 15px 15px 25px;
     border: 2px solid #777;
@@ -286,7 +270,7 @@ a.linksteksta:hover{
 
 .rakstspicture{
     position: relative;
-    max-width: 185px;
+    max-height: 155px;
     float: left;
     padding: 5px 5px;
     z-index:1;
@@ -304,8 +288,8 @@ a.linksteksta:hover{
         right: 200px;
     }
     .footerText{
-        left: 60px;
-        top: 19px;
+        left: 70px;
+        top: -10px;
     }
 }
 
@@ -318,15 +302,15 @@ a.linksteksta:hover{
         top: 115px;
     }
     .main {
-        height: 3200px;
+
         width: 100%;
     }
     .leftside{
-        height: 120px;
+        min-height: 120px;
         width:100%;
     }
     .leftside>p{
-        width:90%;
+        min-width:104.7%;
         overflow: hidden;
     }
 }
