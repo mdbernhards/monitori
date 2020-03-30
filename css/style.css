@@ -1,23 +1,25 @@
+
 body{
-    height: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .mainbox{
     background-color: white;
     width: 100%;
     margin: 0px auto;
-    height: auto;
+    min-height: 100vh;
     position: relative;
 }
 
 .leftside{
     background-color: #e7ebe6;
     width: 10%;
-    height: auto;
-    min-height: 1700px;
+    min-height: 1000px;
     float:left;
+    position: sticky;
+    top: 0;
 }
+
 
 .main {
     background-color: white;
@@ -306,8 +308,10 @@ a.linksteksta:hover{
         width: 100%;
     }
     .leftside{
-        min-height: 120px;
+        min-height: 105px;
+        height: 105px;
         width:100%;
+        position: relative;
     }
     .leftside>p{
         min-width:104.7%;
