@@ -1,25 +1,37 @@
 body{
     height: 100%;
     min-height: 100%;
-
-
-
 }
+
 .mainbox{
-    background-color: #ffff99;
+    background-color: white;
     width: 100%;
     margin: 0px auto;
-    height:1500px;
+    height: 1700px;
     position: relative;
 }
 
-
 .leftside{
     background-color: dodgerblue;
-    width: 8%;
-    min-height: 1500px;
+    width: 10%;
+    height: 1700px;
     float:left;
+}
 
+.leftside>p{
+    margin: 10px;
+    font-size: 15px;
+    font-family: Arial,Helvetica,sans-serif;
+    background-color: mediumpurple;
+    width: 130px;
+    height: 23px;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.leftside>p:hover{
+    transition: 0.4s;
+    border: 2px solid blue;
 }
 
 .main {
@@ -29,16 +41,10 @@ body{
     float: left;
 }
 
-.rightside{
-    background-color: dodgerblue;
-    width: 8%;
-    top: 100px;
-    min-height: 1500px;
-    float:left;
-}
-
 .footer{
     clear: both;
+    display: flex;
+    flex-direction: column;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -47,28 +53,25 @@ body{
     background-image: url('../bildes/texture.png');
     background-repeat:repeat;
     overflow: hidden;
-
-
 }
 
 .footer>li{
     position:relative;
     padding:5px 5px 5px 5px;
     top: 8px;
-    left: 7%;
+    left: 8.8%;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .footerText{
     color: gray;
     position: relative;
-    top: 19px;
+    top: -15px;
     left: 43%;
     font-size: 12px;
     font-family: Arial,Helvetica,sans-serif;
 }
-
-
 
 .menu{
     background-color: #303030;
@@ -90,7 +93,6 @@ body{
     font-size: 17px;
     top: 65px;
     right: 300px;
-
 }
 
 .active{
@@ -98,6 +100,7 @@ body{
 }
 
 a:hover {
+    transition: 0.4s;
     color: lightblue;
 }
 
@@ -111,7 +114,7 @@ a {
     font-family: "Segoe UI", Candara;
     color: white;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 35px;
     left: 169px;
     top: 50px;
 }
@@ -125,6 +128,7 @@ a {
 }
 
 .gallery:hover {
+    transition: 0.4s;
     border: 2px solid #777;
 }
 
@@ -161,7 +165,7 @@ a {
     left: 6%;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 30px;
 }
 
 .raksts{
@@ -175,13 +179,28 @@ a {
     margin: 15px;
 }
 
-.gallerytext{
+.mazsvirsraksts{
     position: relative;
-    padding:10px 10px 10px 20px;
+    bottom: 18px;
+    margin: 7px;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 25px;
+    padding:5px 5px 5px 5px;
+}
 
+.monitorutops{
+    font-family: "Segoe UI", Candara;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.gallerytext{
+    position: relative;
+    padding:15px 15px 15px 25px;
+    font-family: "Segoe UI", Candara;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .videogallery{
@@ -205,7 +224,7 @@ a {
     left: 11.5%;
     font-family: "Segoe UI", Candara;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 27px;
 }
 
 .youtubevid{
@@ -213,50 +232,63 @@ a {
     height: 315px;
 }
 
+.monitorutops{
+    position: relative;
+    left: 1%;
+    margin: 15px;
+    padding:15px 15px 15px 40px;
+    font-family: "Segoe UI", Candara;
+    font-weight: bold;
+    font-size: 50px;
+}
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 700px) {
+.monitors{
+    padding:15px 15px 15px 25px;
+    border: 2px solid #777;
+    margin: 25px;
+}
 
-    .leftside{
-        min-height: 100px;
-        width:100%;
-    }
-    .main {width: 100%}
+.teksts{
+    position: relative;
+    margin: 4px;
+    text-indent: 30px;
+    bottom: 10px;
+    font-size: 19px;
+    font-family: "Segoe UI", Candara;
+    font-weight: normal;
 }
 
 @media only screen and (max-width: 1000px) {
-    .main {width: 92%}
-    .rightside{
-        display: none;
-    }
-
     .youtubevid{
         max-width: 280px;
         max-height: 167px;
     }
-
 }
 
-
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1700px) {
     .menu>ul>li{
         right: 200px;
     }
-
     .footerText{
         left: 60px;
+        top: 19px;
     }
 }
 
 @media only screen and (max-width: 1500px) {
     .menu{
         height: 160px;
-
     }
     .menu>ul>li{
         right: 0px;
         top: 115px;
+    }
+    .main {
+        height: 3200px;
+        width: 100%;
+    }
+    .leftside{
+        height: 100px;
+        width:100%;
     }
 }

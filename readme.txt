@@ -1,1 +1,1 @@
-Šis ir readme fails
+Mājaslapa bez bootstrap
