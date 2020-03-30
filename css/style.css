@@ -23,12 +23,13 @@ body{
     position: relative;
     margin: 4px;
     text-indent: 35px;
-    top: 20px;
+    top: 10px;
     font-size: 19px;
     font-family: "Segoe UI", Candara;
     font-weight: normal;
     text-align: justify;
     float: snap;
+    left: 50px;
 }
 
 
@@ -181,7 +182,7 @@ a.linksteksta:hover{
     height: 0;
     overflow: hidden;
     top: 30px;
-    left: 30px;
+    left: 88px;
 }
 
 .map iframe {
