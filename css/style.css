@@ -117,7 +117,17 @@ a.sidemenu{
 
 a.sidemenu:hover{
     transition: 0.4s;
-    color: darkblue;
+    color: blue;
+}
+
+a.linksteksta{
+    text-decoration: none;
+    color: blue;
+}
+
+a.linksteksta:hover{
+    transition: 0.4s;
+    color: red;
 }
 
 .virsraksts{
@@ -182,12 +192,14 @@ a.sidemenu:hover{
 .raksts{
     position: relative;
     width: 87%;
-    height: 200px;
+    height: auto;
+    min-height: 220px;
     padding: 10px;
     top: 3%;
     left: 5%;
     border: 5px solid gray;
     margin: 15px;
+
 }
 
 .mazsvirsraksts{
@@ -216,7 +228,7 @@ a.sidemenu:hover{
 
 .videogallery{
     position: relative;
-    width: 83%;
+    width: 86%;
     top: 3%;
     left: 9%;
     overflow: hidden;
@@ -263,11 +275,21 @@ a.sidemenu:hover{
 .teksts{
     position: relative;
     margin: 4px;
-    text-indent: 30px;
+    text-indent: 35px;
     bottom: 10px;
     font-size: 19px;
     font-family: "Segoe UI", Candara;
     font-weight: normal;
+    text-align: justify;
+    float: snap;
+}
+
+.rakstspicture{
+    position: relative;
+    max-width: 185px;
+    float: left;
+    padding: 5px 5px;
+    z-index:1;
 }
 
 @media only screen and (max-width: 1000px) {
