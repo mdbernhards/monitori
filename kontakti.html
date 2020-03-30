@@ -5,16 +5,6 @@
     <title>PC monitori</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        #map{
-            height: 500px;
-            width: 750px;
-        }
-    </style>
 </head>
 <body>
 <div class="mainbox">
@@ -25,26 +15,27 @@
             <li><a href="galerija.html">Galerija</a></li>
             <li><a href="kontakti.html" class="active">Kontakti</a></li>
         </ul>
-
         <div class="virsraksts">monitori LV</div>
         <img src="./bildes/logo2.png" alt="Mājaslapas logo"  class="logo"/>
     </div>
     <div class="leftside"></div>
     <div class="main">
-        Sazinies ar mums pa epastu monitorilv@gmail.com
-        Atrodamies Latvija, Rīga, Ķengarags
-
-        <div id="map" class="map">
-            <script>
-                function initMap() {
-                    var location =  {lat: 56.908581, lng: 24.182274};
-                    var map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: location});
-                }
-
-            </script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32HyHIY_vtYEx9suAt0FpHvbgMdiaAMk&callback=initMap">
-
-            </script>
+        <div class="kontaktiteksts">
+            Sazinies ar mums pa epastu monitorilv@gmail.com
+        </div>
+        <div class="kontaktiteksts">
+            Atrodamies Latvija, Rīga, Maskavas iela 262.
+        </div>
+        <div class="mapcontainer">
+            <div id="map" class="map">
+                <script>
+                    function initMap() {
+                        var location =  {lat: 56.908581, lng: 24.182274};
+                        var map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: location});
+                    }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32HyHIY_vtYEx9suAt0FpHvbgMdiaAMk&callback=initMap"></script>
+            </div>
         </div>
     </div>
     <div class="footer">

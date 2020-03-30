@@ -1,4 +1,3 @@
-
 body{
     min-height: 100vh;
 }
@@ -14,10 +13,22 @@ body{
 .leftside{
     background-color: #e7ebe6;
     width: 10%;
-    min-height: 1000px;
+    min-height: 1100px;
     float:left;
     position: sticky;
     top: 0;
+}
+
+.kontaktiteksts{
+    position: relative;
+    margin: 4px;
+    text-indent: 35px;
+    top: 20px;
+    font-size: 19px;
+    font-family: "Segoe UI", Candara;
+    font-weight: normal;
+    text-align: justify;
+    float: snap;
 }
 
 
@@ -165,10 +176,26 @@ a.linksteksta:hover{
 }
 
 .map{
+    position: relative;
+    padding-bottom: 90%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
     top: 30px;
     left: 30px;
-    border-color: black;
-    border-style: wave;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.mapcontainer{
+    position: relative;
+    width: 80%;
+    padding-bottom: 200px;
 }
 
 .toptext{
@@ -190,7 +217,6 @@ a.linksteksta:hover{
     left: 5%;
     border: 5px solid gray;
     margin: 15px;
-
 }
 
 .mazsvirsraksts{
@@ -304,7 +330,6 @@ a.linksteksta:hover{
         top: 115px;
     }
     .main {
-
         width: 100%;
     }
     .leftside{
