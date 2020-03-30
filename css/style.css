@@ -12,31 +12,34 @@ body{
 }
 
 .leftside{
-    background-color: dodgerblue;
+    background-color: #e7ebe6;
     width: 10%;
     height: 1700px;
     float:left;
 }
 
 .leftside>p{
-    margin: 10px;
-    font-size: 15px;
+    margin: 5px;
+    position: relative;
+    font-size: 17px;
     font-family: Arial,Helvetica,sans-serif;
-    background-color: mediumpurple;
-    width: 130px;
-    height: 23px;
+    padding: 14px 25px;
+    display: inline-block;
+    width: 70%;
     text-align: center;
-    border: 2px solid gray;
+
 }
 
 .leftside>p:hover{
     transition: 0.4s;
-    border: 2px solid blue;
+    background-color: lightblue;
+    padding: 14px 25px;
+    display: inline-block;
 }
 
 .main {
     background-color: white;
-    width: 84%;
+    width: 80%;
     height:100%;
     float: left;
 }
@@ -95,9 +98,7 @@ body{
     right: 300px;
 }
 
-.active{
-    color: lightblue;
-}
+
 
 a:hover {
     transition: 0.4s;
@@ -107,6 +108,16 @@ a:hover {
 a {
     text-decoration: none;
     color: white;
+}
+
+a.sidemenu{
+    text-decoration: none;
+    color: black;
+}
+
+a.sidemenu:hover{
+    transition: 0.4s;
+    color: darkblue;
 }
 
 .virsraksts{
@@ -139,7 +150,7 @@ a {
 .gallerybox{
     position: relative;
     top: 2.6%;
-    left: 4.8%;
+    left: 5%;
     width: 87%;
     border: 5px solid gray;
     margin: 20px;
@@ -205,9 +216,10 @@ a {
 
 .videogallery{
     position: relative;
-    width: 87%;
+    width: 83%;
     top: 3%;
     left: 9%;
+    overflow: hidden;
 }
 
 .video{
@@ -288,7 +300,11 @@ a {
         width: 100%;
     }
     .leftside{
-        height: 100px;
+        height: 120px;
         width:100%;
+    }
+    .leftside>p{
+        width:90%;
+        overflow: hidden;
     }
 }
