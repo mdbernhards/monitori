@@ -1,5 +1,13 @@
-Veidoja: Mārtiņš Dāvis Bernhards D3-1
+Veidoja: Mārtiņš Dāvis Bernhards
 
-Marta uzdevums
+Programmatūras prasības: Marta uzdevums, pielieto: HTML, CSS, JavaScript
 
-Mājaslapa par monitoriem.
+Programmas instalācija: https://mdbernhards.github.io/monitori/
+
+Prorammas pielietojums: Mājaslapa par monitoriem.
+
+Izmantotā literatūra: RVT e-studijas, https://www.w3schools.com/, https://www.khanacademy.org/
+
+
+
+
